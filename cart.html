@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng - TECHWORLD Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="topbar">⚡ GIAO HÀNG NHANH 2H TRONG NỘI THÀNH &nbsp;|&nbsp; ĐỔI 1 ĐỔI 0 TRONG 30 NGÀY</div>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">TECHWORLD<span>.</span></a>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Menu">☰</button>
+            <nav class="main-nav" id="main-nav">
+                <ul>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="products.html">Sản phẩm</a></li>
+                    <li><a href="cart.html">Giỏ hàng</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <div class="user-area" id="user-area"></div>
+                <a href="cart.html" class="cart-link">Giỏ hàng <span class="cart-badge">0</span></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="page-header">
+        <div class="container">
+            <h1>Giỏ hàng của bạn</h1>
+            <div class="breadcrumb"><a href="index.html">Trang chủ</a> / Giỏ hàng</div>
+        </div>
+    </div>
+
+    <div class="container" style="margin-bottom:60px">
+        <!-- Giỏ hàng trống -->
+        <div class="cart-empty" id="cart-empty" style="display:none">
+            <div class="icon">🛒</div>
+            <h3>Giỏ hàng của bạn đang trống</h3>
+            <p>Hãy khám phá các sản phẩm và thêm vào giỏ hàng nhé!</p>
+            <a href="products.html" class="btn btn-primary">Tiếp tục mua sắm</a>
+        </div>
+
+        <div class="cart-layout">
+            <!-- Danh sách sản phẩm trong giỏ -->
+            <div class="cart-table" id="cart-items"></div>
+
+            <!-- Bảng tổng tiền -->
+            <div class="cart-summary" id="cart-summary">
+                <h3>Tổng đơn hàng</h3>
+                <div class="summary-row">
+                    <span>Tạm tính (<span id="summary-count">0</span>)</span>
+                    <span id="summary-subtotal">0₫</span>
+                </div>
+                <div class="summary-row">
+                    <span>Phí vận chuyển</span>
+                    <span id="summary-shipping">0₫</span>
+                </div>
+                <div class="summary-row total">
+                    <span>Tổng cộng</span>
+                    <span id="summary-total">0₫</span>
+                </div>
+                <a href="checkout.html" class="btn btn-primary btn-block">Tiến hành thanh toán</a>
+                <button class="btn btn-outline btn-block" id="clear-cart" style="margin-top:10px">Xóa giỏ hàng</button>
+                <a href="products.html" class="btn btn-dark btn-block" style="margin-top:10px">Tiếp tục mua sắm</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="index.html" class="logo">TECHWORLD<span style="color:var(--primary)">.</span></a>
+                    <p style="margin-top:10px;line-height:1.8">Siêu thị công nghệ chính hãng. Điện thoại - Laptop - Phụ kiện.</p>
+                </div>
+                <div>
+                    <h4>Liên kết</h4>
+                    <a href="index.html">Trang chủ</a>
+                    <a href="products.html">Sản phẩm</a>
+                    <a href="cart.html">Giỏ hàng</a>
+                </div>
+                <div>
+                    <h4>Tài khoản</h4>
+                    <a href="login.html">Đăng nhập</a>
+                    <a href="register.html">Đăng ký</a>
+                </div>
+                <div>
+                    <h4>Liên hệ</h4>
+                    <a>📍 123 Nguyễn Huệ, Q.1, TP.HCM</a>
+                    <a>📞 0901 234 567</a>
+                    <a>✉️ hello@techworld.vn</a>
+                </div>
+            </div>
+            <div class="footer-bottom">© 2026 TECHWORLD Store. Bài tập WEB1044 - Lập trình cơ sở với JavaScript.</div>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/cart-page.js"></script>
+</body>
+</html>
